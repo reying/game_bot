@@ -1,6 +1,5 @@
 'use strict';
 
-const secretNum = 10;
 let playerNum = +prompt('Угадай число от 1 до 100:');
 
 // Ф-я проверки на числовой тип
@@ -9,6 +8,7 @@ const isNumber = function(n) {
 };
 
 const checkData = function() {
+    const secretNum = 10;
     const comparisonNum = function() {
         if (playerNum === 0) {
             alert('Игра окончена');
